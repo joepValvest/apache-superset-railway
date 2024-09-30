@@ -4,6 +4,9 @@ USER root
 
 RUN pip install mysqlclient
 RUN pip install sqlalchemy-bigquery
+RUN pip install shillelagh[gsheetsapi]	
+RUN pip install psycopg2
+
 
 ENV ADMIN_USERNAME $ADMIN_USERNAME
 ENV ADMIN_EMAIL $ADMIN_EMAIL
